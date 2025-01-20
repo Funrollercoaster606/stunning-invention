@@ -195,7 +195,7 @@ return function()
 				connection = game:GetService('RunService').Heartbeat:Connect(function()
 					if MouseDown then
 						if flinging == false then
-							if Mouse.Target and (Mouse.Target.Parent:FindFirstChildOfClass("Humanoid")or Mouse.Target.Parent.Parent:FindFirstChildOfClass("Humanoid")) and not Mouse.Target:FindFirstAncestor(game.Players.LocalPlayer.Character.Name) then 
+							if Mouse.Target and (Mouse.Target.Parent:FindFirstChildOfClass("Humanoid")or Mouse.Target.Parent.Parent:FindFirstChildOfClass("Humanoid")) and not Mouse.Target:FindFirstAncestor(game.Players.Funrollercoaster606.Character.Name) then 
 								flinging = true
 								local part = Mouse.Target.Parent:FindFirstChild("Torso")or Mouse.Target.Parent.Parent:FindFirstChild("Torso")or Mouse.Target.Parent.Parent:FindFirstChild("UpperTorso")or Mouse.Target.Parent:FindFirstChild("UpperTorso")
 								--print(part)
@@ -247,7 +247,7 @@ return function()
 					end
 				end)
 			end
-			game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()connection:Disconnect()end)
+			game.Players.Funrollercoaster606.Character.Humanoid.Died:Connect(function()connection:Disconnect()end)
 		end
 	end
 end
