@@ -18,6 +18,7 @@ getgenv().HatCollision = false
 local ___old; ___old=hookmetamethod(game,'__index',newcclosure(function(s,k)if checkcaller()and s==game:GetService('Workspace')and k== 'non'then return getgenv().CloneRig end return ___old(s,k)end))
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CenteredSniper/Kenzen/master/newnetlessreanimate.lua",true))()]]
 
+local httpservice = game:GetService("HttpsService")
 
 getgenv()._reanimate()
 
