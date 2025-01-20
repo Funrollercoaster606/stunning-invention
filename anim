@@ -3,7 +3,7 @@ return function()
 
 	local RunService = game:GetService("RunService")
 	local Players = game:GetService("Players")
-	local Player = Players.LocalPlayer
+	local Player = Players.Funrollercoaster606
 	local Character = Player.Character
 	local Mouse = Player:GetMouse()
 
